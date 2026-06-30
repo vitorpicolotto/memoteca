@@ -9,7 +9,7 @@ const ui = {
             pensamentos.forEach(ui.adicionarPensamento);
         }
         catch {
-            alert('Erro ao renderizar os pensamentos')
+            //alert('Erro ao renderizar os pensamentos')
         }
     },
     
@@ -38,6 +38,10 @@ const ui = {
         li.appendChild(pensamentoAutoria);
 
         listaPensamentos.appendChild(li)
+    },
+
+    limparFormulario(){
+        document.getElementById('pensamento-form').reset();
     }
 }
 
